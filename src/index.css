@@ -4,22 +4,22 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-primary text-white py-3 px-6 rounded-2xl font-semibold active:scale-95 transition-all flex items-center justify-center gap-2 disabled:opacity-50;
+    @apply bg-[#10b981] text-white py-3 px-6 rounded-2xl font-semibold active:scale-95 transition-all flex items-center justify-center gap-2 disabled:opacity-50;
   }
   .input-field {
-    @apply w-full border border-gray-200 p-4 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all;
+    @apply w-full border border-gray-200 p-4 rounded-xl focus:ring-2 focus:ring-[#10b981] focus:border-transparent outline-none transition-all;
   }
   .card {
     @apply bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden;
   }
-  .bottom-nav-item {
-    @apply flex flex-col items-center gap-1 text-gray-400 transition-colors;
-  }
-  .bottom-nav-item.active {
-    @apply text-primary;
-  }
 }
 
+body {
+  @apply bg-gray-50 text-gray-900 antialiased;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Hide scrollbars but allow scrolling */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
